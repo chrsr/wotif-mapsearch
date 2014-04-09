@@ -34,20 +34,12 @@
                 }
 
                 function pinHotel(hotel) {
-                    L.mapbox.featureLayer({
-                        type: 'Feature',
-                        geometry: {
-                            type: 'Point',
-                            coordinates: [hotel.location.position.lon, hotel.location.position.lat]
-                        },
-                        properties: {
-                            title: hotel.name,
-                            "icon": L.divIcon({
-                                className: 'count-icon',
-                                html: 'blah',
-                                iconSize: [40, 40]
-                            })
-                        }
+                    L.marker([hotel.location.position.lat, hotel.location.position.lon], {
+                        icon: L.divIcon({
+                            className: 'icon',
+                            html: hotel.from_price.amount,
+                            iconSize: [30, 30]
+                        })
                     }).addTo(map);
                 }
 
