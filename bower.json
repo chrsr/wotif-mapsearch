@@ -1,0 +1,19 @@
+{
+  "name": "mapsearch",
+  "version": "0.0.0",
+  "authors": [
+    "Chris Roberts <chris.roberts@wotifgroup.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mapboxjs": "~1.6.1"
+  }
+}
